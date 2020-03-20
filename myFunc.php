@@ -21,7 +21,7 @@ $answer4 = max_array($arr);
 echo "課題4=".$answer4."\n";
 
 $sub1 = "<h1>あさののホームページ用HTML</h1>
-<div>ちはあさのです</div>です。";
+<div>こんにちは！あさのです</div>です。";
 $sub2  =array("DELL",
                 "HP",
                 "APPLE",                
@@ -121,7 +121,10 @@ function func_assort($sub1,$sub2,$sub3){
     
     $myDate = date('Y/m/d',$myTimeStamp);
 
-    $myTimeStamp2 = mktime($myDate);
+    
+    $myTimeStamp2 = mktime(strtotime($myDate));
+    
+    
 
 
     $joined_arr1 = join("-",$sub2);    
